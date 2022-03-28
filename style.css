@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+
+/*Style for the main container*/
+.mainContainer {
+    display: flex;
+}
+
+/*Style for each card*/
+.sedan {
+    width: 300px;
+    height: 480px;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.suvs {
+    width: 300px;
+    height: 480px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    width: 300px;
+    height: 480px;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*Style for the image in the cards*/
+.vehicleImages {
+    position: relative;
+    top: 45px;
+    left: 50px;
+}
+
+/*Style for the titles of the cards*/
+.titles {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    position: relative;
+    left: 50px;
+    top: 60px;
+}
+
+/*Style for the description*/
+.description {
+    width: 200px;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    left: 50px;
+    top: 60px;
+}
+
+/*Style for the button*/
+.button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    position: relative;
+    left: 50px;
+    top: 120px;
+    width: 130px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+
+/*Style for each button and hover*/
+#buttonSedan {
+    color: hsl(31, 77%, 52%);
+    transition: 0.3s;
+}
+
+#buttonSedan:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+
+#buttonSuv {
+    color: hsl(184, 100%, 22%);
+    transition: 0.3s;
+}
+
+#buttonSuv:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+
+#buttonLuxury {
+    color: hsl(179, 100%, 13%);
+    transition: 0.3s;
+}
+
+#buttonLuxury:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+
+/*Style for the footer*/
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Style for mobile devices*/
+
+@media only screen and (max-width: 910px) {
+    
+    .body {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin-top: 100px;
+    }
+    
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .sedan {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 8px 8px;
+    }
+}
